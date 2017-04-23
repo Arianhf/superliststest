@@ -5,7 +5,7 @@ import unittest
 
 class NewVisitorTest(unittest.TestCase):
 	def setUp(self):
-		self.browser = webdriver.Firefox()
+		self.browser = webdriver.Chrome()
 
 	def tearDown(self):
 		self.browser.quit()
@@ -30,7 +30,7 @@ class NewVisitorTest(unittest.TestCase):
 
 		# She types "Buy peacock feathers" into a text box (Edith's hobby 
 		# is tying fly-fishing lures )
-		inputbox.send_keys('Buy peacock feathers')
+		inputbox.send_keys("Buy peacock feathers")
 
 
 		# When she hits enter, the page updates, and now the page lists
